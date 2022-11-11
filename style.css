@@ -1,0 +1,143 @@
+/* Mobile rules: common */
+/* -------------------------------------------------------- */
+#main-body img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+  object-fit: contain;
+}
+
+#main-body li {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+/* Navigation bar */
+#main-body nav * {
+  color: #000;
+}
+
+#main-body p {
+  text-align: justify;
+}
+
+#main-body #brandName {
+  font-family: 'Waterfall', cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: crimson;
+}
+
+/* Header and banner */
+#banner {
+  min-height: 4rem;
+}
+
+/* Body section */
+#main-body section {
+  padding: 1rem;
+}
+
+#sec-content * {
+  padding-top: 1rem;
+}
+
+#sec-content a {
+  text-decoration: none;
+}
+
+/* Footer */
+#main-body #footer-content {
+  padding: 1rem;
+}
+
+#main-body footer form * {
+  margin: 0.5rem;
+}
+
+#main-body footer .bottom-color {
+  background-color: lightgray;
+}
+
+#main-body #copyright {
+  font-size: 0.75rem;
+  padding: 0.5rem 2rem;
+}
+
+/* Sub folder */
+#main-body .sub-page-content .img-container {
+  width: 100%;
+  margin: auto;
+}
+
+#main-body .sub-page-content .img-container * {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+/* Tablet rules: >= 576px */
+/* -------------------------------------------------------- */
+@media only screen and (min-width: 576px) {
+  /* Navigation bar */
+  #main-body #brandName {
+    font-size: 2.1rem;
+  }
+  /* Header and Banner */
+  #banner {
+    position: relative;
+  }
+
+  #banner img {
+    opacity: 90%;
+  }
+
+  #banner div {
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+
+  #main-body h1 {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  #main-body hr {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Sub folder */
+  #main-body .sub-page-content .img-container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* Desktop rules: >= 992px */
+/* -------------------------------------------------------- */
+@media only screen and (min-width: 992px) {
+
+  #main-body {
+    width: 90%;
+    margin: auto;
+  }
+
+  #main-body section,
+  #main-body footer {
+    background-color: whitesmoke;
+  }
+
+  /* Navigation bar */
+  #main-body #brandName {
+    font-size: 3.5rem;
+  }
+
+  /* Sub folder */
+  #main-body .sub-page-content .img-container {
+    width: 60%;
+    margin: auto;
+  }
+}
